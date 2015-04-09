@@ -1,4 +1,3 @@
-setwd("C:/Users/baz/Copy/Data Analysis/4. Exploratory Data Analysis/src/Course Project 1/ExData_Plotting1")
 # Load required libraries
 library(dplyr)
 library(lubridate)
