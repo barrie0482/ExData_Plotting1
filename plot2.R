@@ -31,7 +31,7 @@ axis(1,at=c(1170288000,1170374400,1170460800), labels=c("Thu","Fri","Sat"))
 # Create y axis (left) tick points and tick point labels
 axis(2)
 # Create y axis label
-title(ylab = "Global Active Power (kilowatts)",cex.lab=0.8)
+title(ylab = "Global Active Power (kilowatts)",cex.lab=1)
 # Draw a box around the plot
 box()
 # Close the png device

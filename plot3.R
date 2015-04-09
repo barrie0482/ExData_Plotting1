@@ -35,9 +35,10 @@ axis(1,at=c(1170288000,1170374400,1170460800), labels=c("Thu","Fri","Sat"))
 # Create y axis (left) tick points and tick point labels
 axis(2)
 # Create y axis label
-title(ylab = "Energy sub metering",cex.lab=0.75)
+title(ylab = "Energy sub metering",cex.lab=1)
 # Create the legend in the top right of the plot
-legend("topright", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lty = 1, col = c("black","red","blue"))
+legend("topright", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), 
+       lty = 1, col = c("black","red","blue"))
 # Draw a box around the plot
 box()
 # Close the png device

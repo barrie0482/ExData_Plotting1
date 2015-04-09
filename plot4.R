@@ -26,6 +26,7 @@ mydata$timestamp <- dmy_hms(mydata$timestamp)
 png(filename = 'plot4.png', width=480, height=480, res=72)
 # Create a 2 x 2 layout to display the plots
 par(mfcol=c(2,2))
+# Plot 1
 # Create the plot
 plot(mydata$timestamp, mydata$Global_active_power, type="l",axes = FALSE, xlab = "", ylab = "")
 # Create x axis (bottom) tick points and and tick point labels
@@ -33,7 +34,7 @@ axis(1,at=c(1170288000,1170374400,1170460800), labels=c("Thu","Fri","Sat"))
 # Create y axis (left) tick points and tick point labels
 axis(2)
 # Create y axis label
-title(ylab = "Global Active Power (kilowatts)",cex.lab=0.75)
+title(ylab = "Global Active Power",cex.lab=1)
 # Draw a box around the plot
 box()
 # Plot 2
@@ -48,7 +49,7 @@ axis(1,at=c(1170288000,1170374400,1170460800), labels=c("Thu","Fri","Sat"))
 # Create y axis (left) tick points and tick point labels
 axis(2)
 # Create y axis label
-title(ylab = "Energy sub metering",cex.lab=0.75)
+title(ylab = "Energy sub metering",cex.lab=1)
 # Create the legend in the top right of the plot
 legend("topright", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), 
        lty = 1, col = c("black","red","blue"), bty = "n")
@@ -61,7 +62,7 @@ plot(mydata$timestamp, mydata$Voltage, type="l",axes = FALSE, xlab = "", ylab = 
 axis(1,at=c(1170288000,1170374400,1170460800), labels=c("Thu","Fri","Sat"))
 # Create y axis (left) tick points and tick point labels
 axis(2)
-title(xlab = "datetime", ylab = "Voltage",cex.lab=0.75)
+title(xlab = "datetime", ylab = "Voltage",cex.lab=1)
 box()
 # Plot 4 
 # Create the plot
@@ -71,7 +72,7 @@ axis(1,at=c(1170288000,1170374400,1170460800), labels=c("Thu","Fri","Sat"))
 # Create y axis (left) tick points and tick point labels
 axis(2)
 # Create y axis label
-title(xlab = "datetime", ylab = "Global_reactive_power",cex.lab=0.75)
+title(xlab = "datetime", ylab = "Global_reactive_power",cex.lab=1)
 # Draw a box around the plot
 box()
 # Close the png device
